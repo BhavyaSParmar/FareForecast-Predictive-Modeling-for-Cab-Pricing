@@ -15,30 +15,31 @@ The Phases can be divided in the following parts:
 Imported required packages such as pandas, numpy, matplotlib, seaborn, and sklearn.
 Loaded the dataset, examined its shape and structure, and verified data types using .info() and .describe().
 Handled missing values, cleaned data, and ensured consistency in the dataset by transforming date columns and handling null values.
-Exploratory Data Analysis (EDA)
 
-2. Analyzed various features and patterns in the data:
+2. Exploratory Data Analysis (EDA)
+ Analyzed various features and patterns in the data:
 Cab Type vs. Price: Compared fares based on different cab types (e.g., Black SUV, Lux Black XL, Shared, UberPool).
 Weather Conditions vs. Price: Investigated fare variations based on weather conditions (e.g., clear day vs. rainy day).
 Distance vs. Price: Assessed the relationship between distance and price.
 Hour vs. Price: Analyzed cab fares based on time of day.
 Visualized data distributions and identified potential trends and anomalies using stripplot, scatter, and bar plots.
-Data Preparation
 
-3. Label Encoding: Converted categorical features (e.g., cab type, source, destination) into numerical format for model compatibility.
+3. Data Preparation
+Label Encoding: Converted categorical features (e.g., cab type, source, destination) into numerical format for model compatibility.
 Binning: Created bins for surge multipliers to categorize wait times and represent them as integers.
 Handling Missing Values: Filled missing values with median values for certain columns to maintain consistency in the data.
-Recursive Feature Elimination (RFE)
 
+4. Recursive Feature Elimination (RFE)
 Used RFE to identify and retain the most important features impacting the target variable (cab fare price).
 Assigned dependent (price) and independent (influencing attributes) variables and conducted feature importance scoring to identify key features.
 Tested RFE with 15, 25, 40, and 56 features to evaluate the effect on model performance.
-Feature Selection
+
+5. Feature Selection
 Identified and removed less impactful features to optimize the dataset.
 Reduced dimensionality by selecting the most relevant columns, simplifying the dataset for model training.
 Modeling and Testing
 
-4. Model Selection: Trained and tested four ML models:
+6. Model Selection: Trained and tested four ML models:
 Linear Regression
 Decision Tree
 Random Forest
@@ -47,10 +48,12 @@ Model Evaluation: Measured each model’s performance using:
 Cross-validation
 Performance metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE).
 Visualizations like scatter plots to compare actual vs. predicted values.
-Result Analysis
+
+7. Result Analysis
 Compiled model accuracy scores and error metrics for all algorithms.
 Visualized accuracy comparisons and performance matrices for each model.
-Feature Importance Analysis
+
+8. Feature Importance Analysis
 Used SHAP (SHapley Additive exPlanations) values to interpret feature importance and evaluate the influence of each feature on predictions.
 Visualized SHAP values to identify features with the most impact on cab fare predictions.
 Additional Technical Components
