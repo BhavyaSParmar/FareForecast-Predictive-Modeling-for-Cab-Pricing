@@ -5,9 +5,13 @@ This project aims to build a predictive model to estimate cab fares based on var
 The project encompasses:
 
 Data Preprocessing: Cleaning, encoding, and transforming raw data to ensure consistency and quality for modeling.
+
 Exploratory Data Analysis (EDA): Analyzing data trends, including fare distributions across different cab types, weather conditions, and times of day.
+
 Feature Selection & Engineering: Using Recursive Feature Elimination (RFE) to identify key variables that impact fare prices, which optimizes the model's performance.
+
 Model Training & Evaluation: Experimenting with multiple machine learning models such as Linear Regression, Decision Trees, Random Forests, and Gradient Boosting, and evaluating them on performance metrics like MAE, MSE, and RMSE.
+
 Interpretability with SHAP: Leveraging SHAP values to interpret feature importance and ensure model transparency.
 
 The Phases can be divided in the following parts:
